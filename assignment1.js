@@ -8,15 +8,15 @@ app.use(express.static("src/views"))
 //static routes
 app.get("/", function(req, res){
 	res.send(index.html);
-});
+})
 
-app.get("/logIn", function(req, res){
-	res.send("");
-});
+app.get("/1", function(req, res){
+	res.send(addToList.html);
+})
 
-app.get("/addToList", function(req, res){
-	res.send("");
-});
+app.get("/2", function(req, res){
+	res.send(logIn.html);
+})
 
 //Listen on port
 app.listen(port, function(err){
